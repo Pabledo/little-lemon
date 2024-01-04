@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    font-family: 'Karla', sans-serif;
+}
 .bg-primary {
     background-color: #EDEFEE;
+}
+
+.bg-secondary{
+    background-color: #495E57;
+    color: white;
+}
+
+.title {
+    color: #F4CE14;
+    font-family: 'Markazi Text', serif;
 }

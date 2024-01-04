@@ -1,6 +1,6 @@
 export const Footer = () => {
 	return (
-		<footer className="grid lg:grid-cols-4 grid-cols-1 gap-x-14 bg-primary lg:p-24 p-4">
+		<footer className="grid lg:grid-cols-4 grid-cols-1 gap-x-14 bg-primary lg:py-24 lg:px-52 p-4">
 			<div className="flex justify-center items-center">
 				<img className="lg:w-auto w-72 lg:h-fit" src="./images/logoLarge.jpg" alt="little lemon logo" />
 			</div>
