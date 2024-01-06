@@ -1,7 +1,7 @@
 import { Header } from "./Header"
 import { Highlights } from "./Highlights"
-import { Main } from "./Main"
 import { Testimonials } from "./Testimonials"
+import { About } from "./About"
 
 export const HomePage = () => {
   return (
@@ -9,6 +9,7 @@ export const HomePage = () => {
         <Header />
         <Highlights />
         <Testimonials />
+        <About />
     </>
   )
 }

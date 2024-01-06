@@ -2,7 +2,7 @@ import { PrimaryButton } from "./PrimaryButton"
 
 export const Header = () => {
   return (
-    <header className="grid lg:grid-cols-2 gap-x-14 bg-secondary lg:px-52 p-4">
+    <header className="grid lg:grid-cols-2 grid-cols-1 gap-x-14 bg-secondary lg:px-52 p-4">
         <div className="space-y-5">
           <h1 className="title text-6xl">Little Lemon</h1>
           <h2 className="title text-5xl !text-white !-mt-3">Chicago</h2>
