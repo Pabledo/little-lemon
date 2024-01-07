@@ -19,14 +19,16 @@ export const BookForm = ({ availableTimes, submitForm }) => {
 
     const getIsFormValid = () => {
         return (
-            date && !time.includes('Select') && guests >= 1 && !occasion.includes('select')
+            date && !time.includes('Select') && guests >= 1 && guests <= 10 && !occasion.includes('select')
         );
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if(getIsFormValid()){
-            submitForm({date, time, guests, occasion}) && navigate('/confirmation');
+            const data = {date, time, guests, occasion};
+            window.sessionStorage.setItem('data',JSON.stringify(data));
+            submitForm(data) && navigate('/confirmation');
             clearForm();
         }
     };

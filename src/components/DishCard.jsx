@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export const DishCard = ({title, img, price, description}) => {
   return (
@@ -9,12 +10,12 @@ export const DishCard = ({title, img, price, description}) => {
                 <p className="text-secondaryOrange font-bold">{price}</p>
             </div>
             <p className="mb-3 font-normal ">{description}</p>
-            <a href="#" className="flex align-bottom items-center py-2 font-bold hover:translate-x-1 transition ease-in-out">
+            <Link to="#" className="flex align-bottom items-center py-2 font-bold hover:translate-x-1 transition ease-in-out">
                 Order a delivery
                 <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>
-            </a>
+            </Link>
         </div>
     </article>
   )

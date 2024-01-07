@@ -11,7 +11,7 @@ export const About = () => {
 			</div>
 			<div className="relative">
 				<img className="w-72 shadow-2xl" src="./images/about1.jpg" alt="about1" />
-				<img className="w-72 absolute top-2/4 right-20 shadow-xl" src="./images/about2.jpg" alt="about2" />
+				<img className="w-72 absolute md:top-2/4 top-2/4 md:right-20 right-0 shadow-xl" src="./images/about2.jpg" alt="about2" />
 			</div>
 		</section>
 	)
